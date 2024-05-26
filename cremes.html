@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crèmes Skincare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Crèmes Skincare</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="nettoyants.html">Nettoyants</a>
+            <a href="serums.html">Sérums</a>
+            <a href="cremes.html">Crèmes</a>
+            <a href="conseils.html">Conseils</a>
+        </nav>
+    </header>
+    <main>
+        <section class="product-list">
+            <h2>Liste des Crèmes</h2>
+            <article class="product">
+                <h3>Crème Hydratante</h3>
+                <p>Description: Une crème hydratante légère pour tous types de peau.</p>
+                <p>Utilisation: Appliquer matin et soir après le sérum.</p>
+                <p>Prix: 25€</p>
+            </article>
+            <!-- Autres produits -->
+        </section>
+        <section class="add-product">
+            <h2>Ajouter une Crème</h2>
+            <form action="add_product.php" method="post">
+                <input type="hidden" name="type" value="Crème">
+                <label for="product-name">Nom du produit:</label>
+                <input type="text" id="product-name" name="product-name" required>
+                <label for="product-description">Description:</label>
+                <textarea id="product-description" name="product-description" required></textarea>
+                <label for="product-usage">Utilisation:</label>
+                <textarea id="product-usage" name="product-usage" required></textarea>
+                <label for="product-price">Prix:</label>
+                <input type="text" id="product-price" name="product-price" required>
+                <button type="submit">Ajouter</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Skincare Tips</p>
+    </footer>
+</body>
+</html>
+
